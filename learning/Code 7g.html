@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            body{
+                background-color: #111;
+                font-family: Arial;
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+            }
+            body > * {                  /* Ensures all children of body are centered,> is for direct children only, * iS a universal selector */
+                vertical-align: middle;
+            }
+            
+            img {
+                border-radius: 50%;
+                object-fit: cover;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+
+            input {
+                border: none; 
+                outline: none;
+                font-size: 16px;
+                padding: 10px;
+                margin: 0 10px;
+                border-radius: 10px;
+                width: 200px;
+                vertical-align: middle;
+                background: #f0f0f0;
+            }
+                input::placeholder {
+                    color: #888;
+                }
+
+            button {
+                background-color: #1da1f2;
+                color: white;
+                border: none;
+                border-radius: 20px;
+                padding: 8px 15px;
+                font-weight: bold;
+                vertical-align: middle;
+            }
+                button:hover {
+                    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+                    opacity: 0.8;
+                    cursor: pointer;
+                    transition: box-shadow 0.3s ease-in-out,
+                                opacity 0.3s ease-in-out,
+                                cursor 0.4s ease-in-out;
+                }
+
+        </style>
+
+    </head>
+    <body>
+
+        <img alt = "tweet button from X"   
+             src = "/img-rain world.png"
+             onclick = "window.open('/img-rain world.png')">
+        
+        <input type = "text"
+               placeholder = "What's happening?">
+
+        <button onclick = "window.open('https://twitter.com/intent/tweet', '_blank')">
+            Tweet
+        </button>
+
+    </body>
+</html>
+`   

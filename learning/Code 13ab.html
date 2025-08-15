@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="practice of flexbox">
+        <title>
+            Exercise 13ab
+        </title>
+        <style>
+            .outer-box-one, .outer-box-two {
+                display: flex;
+                flex-direction: row;
+                margin: 10px 0 50px 0;
+            }
+            .no-one {
+                background-color: pink;
+                width: 100px;
+                display: flex;
+                justify-content: center;
+                color: white;
+                padding: 20px;
+            }
+            .no-two {
+                background-color: aquamarine;
+                width: 200px;
+            }
+            .no-one-two {
+                background-color: lightblue;
+                width: 100px;
+                padding: 20px;
+                height: 30px;
+            }
+            .no-two-two {
+                background-color: lightgreen;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <main class= "outer-box-one">
+            <section class="no-one">
+                <div style="background-color: black;">item1</div>
+            </section>
+            <section class="no-two">item2</section>
+        </main>
+
+        <main class="outer-box-two">
+            <section class="no-one-two"></section>
+            <section class="no-two-two">
+                <div>row1</div>
+                <div style="display: flex; justify-content: space-between; color: white;">
+                    <div style="background-color: black;">row2</div>
+                    <div style="background-color: black;">row2</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>    

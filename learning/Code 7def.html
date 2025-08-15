@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            input {
+                font-family: Arial;
+                border-color: rgb(232, 228, 228);
+                font-size: 20px;
+                margin: 15px; 
+                padding:15px;           
+            }
+                input:focus {
+                    outline: none;
+                    box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+                    transition: box-shadow 0.3s ease-in-out;
+                }
+
+            button {
+                    background-color: #0077B5;
+                    color: white;
+                    border: none;
+                    padding: 15px 20px;
+                    font-size: 18px;
+                    border-radius: 25px;
+                    cursor: pointer;
+                    width: 350px;
+                }
+                button:hover {
+                    background-color: #005582;
+                    transition: background-color 0.3s ease-in-out
+                }
+
+            .search-bar {
+                border-radius: 8px;
+                border-width: 1.7px;
+                border-style: solid;
+                width: 180px;
+            }
+
+            .google-bar {
+                border-radius: 50px;
+                border-width: 1.3px;
+                border-style: solid;
+                font-size: 15px;
+                width: 450px;
+            }
+
+            .linked-in {
+                border-style: solid;
+                border-color: rgba(59, 58, 58, 0.922);
+                border-radius: 5px;
+                width: 340px;
+                margin: 0px;
+                height: 10px;
+            }
+            .linked-in:focus {
+                outline: none;
+                box-shadow: 0 0 5px rgba(66, 133, 244, 0.5);
+                transition: box-shadow 0.3s ease-in-out;
+            }
+
+            p {
+                font-family: Arial;
+                color: grey;
+                cursor: default;
+            }
+            .p-p:hover {
+                color: rgb(3, 197, 197);
+                cursor: pointer;
+                text-decoration: underline;
+                transition: color 0.2s ease-in-out,
+                            text-decoration 0.2s ease-in-out;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <input class="google-bar" type="text" placeholder="Search Google or type a URL">
+
+        <p>
+            Email
+        </p>
+        <input class="linked-in" type="text"><br>
+        <p>
+            By clicking Agree & Join, you agree to <span class="p-p">
+                privacy policy.
+            </span>
+        </p>
+        <button>
+            Agree & join 
+        </button>
+
+    </input>
+    </body>
+</html>

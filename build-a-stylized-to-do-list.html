@@ -1,0 +1,101 @@
+<!DOCTYPE html><html
+html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body div {
+        border: 2px  gray;
+        font-family: Arial, sans-serif;
+        border-radius: 15px;
+        padding: 10px 40px 10px 40px;
+        box-shadow: 5px 5px 5px rgb(216, 212, 212);
+      }
+
+      h1 {
+        text-align: center;
+        text-decoration: double underline;
+      }
+
+      .sub-item-link {
+        text-decoration: none;
+      }
+      .sub-item-link:hover {
+        color: red;
+      }
+      .sub-item-link:active {
+        color: purple;
+      }
+      .sub-item-link:visited {
+        color: orange;
+      }
+      .sub-item-link:focus {
+        outline: solid;
+      }
+
+      .sub-item {
+        margin-top: 10px;
+        list-style: square inside;
+      }
+
+      .todo-list {
+        background-color: lightgreen;
+        border-radius: 5px;
+      }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>MY TO-DO LIST</h1>
+        <section>
+            <ul class="todo-list">
+                <li>
+                    <input type = "checkbox" id="gaming" name="gaming">
+                    <label for="gaming">
+                    Explore gaming keyboards
+                    </label>
+                    <ul class="sub-item">
+                    <li><a href="#" class="sub-item-link" target="_blank">Store Links</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <input type = "checkbox" id="report" name="report">
+                    <label for="report">
+                    Finish the report
+                    </label>
+                    <ul class="sub-item">
+                    <li><a href="#" class="sub-item-link" target="_blank">Request Access</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <input type = "checkbox" id="warranty" name="warranty">
+                    <label for="warranty">
+                     View Phone's Warranty
+                    </label>
+                    <ul class="sub-item">
+                    <li><a href="#" class="sub-item-link" target="_blank">View Receipts</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <input type = "checkbox" id="specs" name="specs">
+                    <label for="specs">
+                     Check Processor Specs
+                    </label>
+                    <ul class="sub-item">
+                    <li><a href="#" class="sub-item-link" target="_blank">View Model Number</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>

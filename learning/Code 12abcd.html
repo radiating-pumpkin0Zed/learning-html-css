@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .div-1, .div-2, .div-3, .div-4 {
+                display: flex;
+                margin: 50px;
+            }
+            .div-3 {
+                justify-content: space-between;
+            }
+            .box-1 {
+                background-color: aquamarine;
+                width: 200px;
+            }
+            .box-2 {
+                background-color: chocolate;
+                width: 75px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="div-1">
+            <div class="box-1"> 200px </div>
+            <div class="box-2"> 75px </div>
+        </div>
+
+        <div class="div-2">
+            <div style="background-color: darkcyan; width: 50px;"> item1 </div>
+            <div style="background-color: bisque; flex: 1;"> item2 </div>
+            <div style="background-color: lightblue; width: 75px;"> item3 </div>
+        </div>
+
+        <div class="div-3">
+            <div style="background-color: pink;"> item1 </div>
+            <div style="background-color: pink;"> item2 </div>
+            <div style="background-color: pink;"> item3 </div>
+            <div style="background-color: pink;"> item4 </div>
+        </div>
+
+        <div class="div-4" style="border: solid gray; height: 50px; align-items: center;justify-content: space-between;">
+            <div style="background-color: lightblue"> item1 </div>
+            <div style="background-color: yellowgreen"> item2 </div>
+        </div>
+    </body>
+</html>

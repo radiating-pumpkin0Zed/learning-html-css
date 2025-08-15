@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            
+            body {
+                font-family: Arial;
+            }
+
+            #div-1,
+            #div-3 {
+                background-color: lightblue;
+            }
+
+            #div-2 {
+                background-color: pink;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div style="display: grid;
+                    grid-template-columns: 50px 1fr 75px;
+                    margin-bottom: 50px;">
+            <div id="div-1"> col1</div>
+            <div id="div-2"> col2 </div>
+            <div id="div-3"> col3 </div>
+        </div>
+
+        <div style="display: grid;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
+                    column-gap: 20px;
+                    row-gap: 10px;">
+
+            <div style="background-color: pink;"> col1 </div>
+            <div style="background-color: lightblue;"> col 2 </div>
+            <div style="background-color: pink;"> col3 </div>
+            <div style="background-color: lightblue;"> col 4 </div>
+            <div style="background-color: pink;"> col1 </div>
+            <div style="background-color: lightblue;"> col 2 </div>
+            <div style="background-color: pink;"> col3 </div>
+            <div style="background-color: lightblue;"> col 4 </div>
+
+        </div>
+        
+    </body>
+
+</html>

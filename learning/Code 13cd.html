@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="Just a joke">
+        <title>Exercise 13bc</title>
+        <style>
+            body {
+                font-family: Arial;
+                margin: 50px;
+            }
+
+            main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: 1px solid #ccc;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 10px 10px 20px rgba(144, 144, 146, 0.7);
+            }
+
+            header {
+                color: gray;
+                margin-bottom: 10px;
+                font-size: 12px;
+            }
+
+            img {
+                border-radius: 50%;
+                object-fit: cover;
+                width: 40px;
+                height: 40px;
+            }
+
+            .email-content {
+                display: block;
+                flex: 1;
+            }
+
+            .lower-box {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 15px;
+                align-items: center;
+            }
+
+            .email-top-row {
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .preview, .time {
+                font-size: 14px;
+                color: gray;
+            }
+
+            .delta {
+                font-weight: bolder;
+            }
+
+            .subject {
+                font-weight: 550;
+                font-size: 14px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>ALL INBOXES</header>
+            <section class="lower-box">
+                <img src="reference-images\img-Cat1.png">
+                <div class="email-content">
+                    <div class="email-top-row">
+                        <span class="delta">Chewy Promotions</span>
+                        <span class="time">4:58 PM</span>                            
+                    </div>
+                    <div class="subject">Biggest sales of the year!</div>
+                    <div class="preview">Hey there! We're writing to tell you about our...</div>
+                </div>
+            </section>            
+        </main>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                font-family: Arial;
+                margin: 50px;
+                background-color: burlywood;
+            }
+            
+            main {
+                display: flex;
+                background-color: white;
+                margin-top: 50px;
+            }
+
+            img {
+                width: 50px;
+                border-radius: 100%;
+                padding: 12px;
+                height: 50px;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                gap: 10px;
+            }
+
+            div span {
+                color: gray;
+                cursor: pointer;
+            }
+            div span:hover {
+                text-decoration: underline;
+                transition: text-decoration 0.3s ease-in-out;
+            }
+
+            .the-box {
+                display: flex;
+                flex-direction: row;
+                border-radius: 13px;
+                border: 1.5px solid lightgray;
+                margin: auto 15px 15px 0;
+            }
+
+            .youtube {
+                color: gray;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align: center; text-decoration: double underline;"> A simple Design </h1>
+        <main>
+            <img src="\reference-images\img-Cat1.png" alt="A cat">
+            <section>
+                <div><strong>supersimple.dev </strong><span>@SuperSimpleDev</span></div>
+                <div>What is backend web development? A complete overview. New video is up!</div>
+                <section class="the-box">
+                    <div style="background-color: lightgray; width: 45%; border-radius: 12px 0 0 12px;"></div>
+                    <div>
+                        <p class="youtube">youtube.com</p>
+                        <p>Backend web development - a complete overview (2021)</p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>    

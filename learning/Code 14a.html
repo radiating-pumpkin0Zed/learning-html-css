@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        height: 3000px;
+      }
+
+      main > p {          /* targetting the child element which is directly in div (parent element)*/
+        position: sticky;
+        top: 0;
+        background-color: lightblue;
+        padding: 10px;
+      }
+
+      p + div { /* targetting the next sibling element of p */
+        position: sticky;
+        top: 50px;
+        background-color: lightgreen;
+        padding: 10px;
+      }
+
+      main ~ div { /* targetting all sibling elements of main */
+        position: sticky;
+        top: 100px;
+        background-color: lightcoral;
+        padding: 10px;
+      }
+
+      .below-box {
+        position: absolute;
+      }
+
+      .upper-box {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p> Yo Dude! </p>
+      <div class="below-box">
+
+      </div>
+        <div class="upper-box">
+          DAWG
+        </div>
+    </main>
+  </body>
+</html>
